@@ -8,4 +8,4 @@ jobs:
       - deploy:
           name: Maybe Deploy
           command:
-            echo $(aws s3 sync /tmp/whaleteeth_website s3://www.whaleteethmusic.com --dryrun)
+            echo aws s3 sync . s3://www.whaleteethmusic.com
