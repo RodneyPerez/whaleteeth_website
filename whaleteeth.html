@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+      WhaleTeeth
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style>
+      body {
+          background-image: url("https://s3.amazonaws.com/www.whaleteethmusic.com/whaleteeth_background.jpg");
+          background-size: cover;
+      }
+      @keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+      @keyframes slowfadein {
+          0% { opacity: 0; }
+          40% { opacity: 0.1;}
+          100%   { opacity: 1; }
+      }
+      h1 {
+          color: white;
+          font-size: 5.9vw;
+          font-family: "Playball", Georgia, Serif;
+          font-weight: bold;
+          letter-spacing: .10em;
+          line-height: 1em;
+          -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+             -moz-animation: fadein 6s; /* Firefox < 16 */
+              -ms-animation: fadein 6s; /* Internet Explorer */
+               -o-animation: fadein 6s; /* Opera < 12.1 */
+                  animation: fadein 6s;
+          -webkit-transition-delay: 2s; /* Safari */
+            transition-delay: 2s;
+      }
+      h3 {
+          color: white;
+          font-size: 3.9vw;
+          font-family: "Playball", Georgia, Serif;
+          font-weight: bold;
+          letter-spacing: 2px;
+          line-height: 1em;
+          -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
+             -moz-animation: fadein 7s; /* Firefox < 16 */
+              -ms-animation: fadein 7s; /* Internet Explorer */
+               -o-animation: fadein 7s; /* Opera < 12.1 */
+                  animation: fadein 7s;
+                  -webkit-transition-delay: 2s; /* Safari */
+                    transition-delay: 2s;
+
+      }
+      p {
+        color: white;
+        font-size: 1.9vw;
+        font-family: "Source Code Pro", monospace;
+        font-weight: bold;
+        line-height: 1.5em;
+        -webkit-animation: fadein 9s; /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: fadein 9s; /* Firefox < 16 */
+            -ms-animation: fadein 9s; /* Internet Explorer */
+             -o-animation: fadein 9s; /* Opera < 12.1 */
+                animation: fadein 9s;
+                -webkit-transition-delay: 2s; /* Safari */
+                  transition-delay: 2s;
+      }
+      iframe {
+        -webkit-animation: slowfadein 7s; /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: slowfadein 7s; /* Firefox < 16 */
+            -ms-animation: slowfadein 7s; /* Internet Explorer */
+             -o-animation: slowfadein 7s; /* Opera < 12.1 */
+                animation: slowfadein 7s;
+                -webkit-transition-delay: 2s; /* Safari */
+                  transition-delay: 2s;
+      }
+      .preload * {
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -ms-transition: none !important;
+        -o-transition: none !important;
+      }
+  </style>
+  </head>
+  <body class="preload">
+    <div class="container">
+      <div class= "row text-center">
+        <div class="col">
+          <h1 class="m-4">
+            <strong>WHALETEETH
+            </strong>
+          </h1>
+        </div>
+      </div>
+      <div class= "row text-center">
+        <div class="col">
+          <h3 class="m-4">
+            <strong>CLOUD SHADOWS EP
+            </strong>
+          </h3>
+        </div>
+      </div>
+      <div class="row h-100">
+        <div class= "col-md-6 col-sm-12">
+          <iframe style="border: 0; width: 100%; height: 340px" src="https://bandcamp.com/EmbeddedPlayer/album=3319004161/size=large/bgcol=333333/linkcol=2ebd35/artwork=none/transparent=true/" seamless><a href="http://whaleteeth.bandcamp.com/album/cloud-shadows">Cloud Shadows by Whale Teeth</a></iframe>
+        </div>
+        <div class= "col text-center my-auto">
+          <p>
+            For booking and press inquiries, please contact gigs@whaleteethmusic.com
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(window).load(function() {
+      $("body").removeClass("preload");
+    });
+    </script>
+  </body>
+</html>
