@@ -13,5 +13,7 @@ jobs:
        fi
 workflows:
   version: 2
-    - build
-    - deploy
+  build-and-deploy:
+    jobs:
+     - build
+     - deploy
