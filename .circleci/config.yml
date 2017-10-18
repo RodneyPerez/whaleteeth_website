@@ -7,9 +7,11 @@ jobs:
        - run:
             name: awscli
             command: sudo pip install awscli
+    deploy:  |
+       if [ "${CIRCLE_BRANCH}" == "master" ]; then
+         aws s3 sync home\ubuntu\whaleteeth_website s3://www.whaleteethmusic.com --delete
+       fi
 workflows:
   version: 2
-   deploy:  |
-      if [ "${CIRCLE_BRANCH}" == "master" ]; then
-        aws s3 sync home\ubuntu\whaleteeth_website s3://www.whaleteethmusic.com --delete
-      fi
+    - build
+    - deploy
