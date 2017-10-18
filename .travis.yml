@@ -1,5 +1,8 @@
+install: true
+branches:
+  only:
+  - master
 deploy:
-  install: true
   provider: s3
   access_key_id: ''
   secret_access_key:
