@@ -1,5 +1,5 @@
 install: true
-script:
+script: sudo pip install awscli
 deploy:
   provider: s3
   access_key_id: ''
