@@ -7,4 +7,4 @@ jobs:
       - deploy:
           name: Maybe Deploy
           command:
-            aws s3 sync /home/ubuntu/whaleteeth_website  s3://www.whaleteethmusic.com
+            aws s3 sync .  s3://www.whaleteethmusic.com
