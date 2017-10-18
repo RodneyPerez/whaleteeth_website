@@ -1,0 +1,8 @@
+dependencies:
+    override:
+        - sudo pip install awscli
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync home\ubuntu\whaleteeth_website s3://www.whaleteethmusic.com --delete
