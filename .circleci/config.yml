@@ -8,5 +8,4 @@ jobs:
       - deploy:
           name: Maybe Deploy
           command:
-            echo ls
             aws s3 sync tmp\whaleteeth_website s3://www.whaleteethmusic.com --delete
