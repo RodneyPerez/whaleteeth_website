@@ -1,4 +1,4 @@
-version: 2
+version: 2.0
 jobs:
   build:
     machine: true
@@ -8,4 +8,4 @@ jobs:
       - deploy:
           name: Maybe Deploy
           command:
-            aws s3 sync tmp\whaleteeth_website s3://www.whaleteethmusic.com --delete
+            aws s3 sync /tmp/whaleteeth_website s3://www.whaleteethmusic.com --delete
