@@ -1,0 +1,11 @@
+deploy:
+  provider: s3
+  access_key_id: ''
+  secret_access_key:
+    secure: jk7jyw2A7AghUQxwuD0t+U+THCkpqqVr38hh2qKDBKbWQwT90z8/BQ2Z38ACdQI2ty4hKgzcMY2+A0OIpWrD0SA1FzS42Q6OWA/UIQYXeRcl7XGy8IflDxO8eXDBAST9OmKpDQ0w/0+1UWfapuDmPxXU9OelDRwV6CSwbtMo6bymKUJYqvwmN5aNcNHcxIBN6TysdqcnuMgYJGmC92Mls/4mMHQ1iyhRQzGZDkhUmogbERuecIX84XhB38daLN83rFK12X5ABpwuTpz0iypSzxsBfPfhCUDtAF5BuPLC5DCWBun2VoDTeOgAb/XBrI4HQlhLzToSSiaI/12sA0LQZBB6NmJMe4UNVZr95J9WNNOxH1JDfiQWhJ6J1QB48yjLOP5vdzGBslKhCTWfacTjy9qX2aaiSi5wVRNxMrX0oH96sV+GuNXtR6odJHHwRrPPFp0tVf/R90fEJnGkaIeGW0WVFsjlNxNAfWe+gtn3ptHhSlFqfl4BzaKHh9O6qEd71DvMacw0kUP9Y09DsIWAcF6ppfuhU3arx/VccHS7tyFpMaEYLYBj1hGtZbjWgcem5oNWjbw7AYbfjr7kXgRg/wDNjvwP9EdflrNgMgrlKNF7Aj1fDbdaM6+j0m1i9avyUhxySNn8YxRCENLdMgubVOtw8PbXaRc/qjcobEYRdlY=
+  bucket: www.whaleteethmusic.com
+  skip_cleanup: true
+  acl: public_read
+  region: us-east-1
+  on:
+    repo: RodneyPerez/whaleteeth_website
